@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = (props) => {
 
-    console.log(props.data)
+    // console.log(props.data)
     return (
         <div className="group relative m-4">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">

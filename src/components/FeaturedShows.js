@@ -84,9 +84,8 @@ const FeaturedShows = (props) => {
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900">Featured Shows</h2>
                 <div className='cursor-pointer text-red-500'>See more</div>
             </div>
-            <div className="mt-6 ">
+            <div className="mt-6">
                 <Slider {...settings}>
-
                     {
                         props.data.map((item, idx) => {
                             return (

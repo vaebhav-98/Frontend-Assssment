@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const fetchMovies = createAsyncThunk('fetchMovies', async () => {
     const response = await fetch('https://api.tvmaze.com/search/shows?q=spiderman');
     const result = await response.json();
-    return result;
+    return result.sort((a, b) => b.score - a.score).slice(0, 10);
 });
 
 const movieSlice = createSlice({
